@@ -1,0 +1,33 @@
+services:
+  fixed-asset-api:
+    image: "fixed-asset-api"
+    build: .
+    container_name: fixed-asset-api
+    ports:
+      - "16800:8080"
+    volumes:
+      - D:/2. fixed-asset/fixed-asset-management-system/file-server/:/file-server/
+    networks:
+      - fixed-asset-net
+    depends_on:
+      - mobile-banking   #container_name of db
+
+  fixed-asset-db:                         # service name
+    image: postgres:16.3-bullseye   # version of postgres
+    container_name: fixed-asset-db      # container
+    ports:
+      - "4441:5432"                 # 4441 is host os port (can edit), 5432 is docker env
+    environment:
+      POSTGRES_PASSWORD: forum#123    # forum#123
+      POSTGRES_USER: charlie
+      POSTGRES_DB: fixed_asset_db
+    volumes:
+      - fixed-asset-vol:/var/lib/postgresql/data     # this is volume
+    networks:
+      - fixed-asset-net
+
+volumes:
+  fixed-asset-vol:
+networks:
+  fixed-asset-net:
+    driver: bridge

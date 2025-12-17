@@ -1,0 +1,74 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.2'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'ouyponlouer.site'
+version = '1.0'
+description = 'fixed-asset-management-system'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // OAuth2 Resource Server (JWT support): Used when your API is secured with Bearer tokens (Authorization: Bearer <token>)
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+
+    //Email: Send emails using JavaMailSender
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    // Spring Security: Core security features: authentication, authorization, filters
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    //Swagger / OpenAPI: Access: http://localhost:8080/swagger-ui/index.html
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+
+    // Database (JPA / Hibernate):  Spring Data JPA + Hibernate + transaction management
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    //Validation: Bean validation using Jakarta Validation (e.g. @NotNull, @Email)
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Spring Web (REST API): Provides Spring MVC, DispatcherServlet, REST controllers, JSON (Jackson)
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+
+    ///MapStruct: Compile-time mapper for converting Entity ↔ DTO
+    compileOnly 'org.mapstruct:mapstruct:1.5.5.Final'
+    annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0' // allow mappstruct work together
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+
+    //Lombok: Reduces boilerplate (getters, setters, constructors, builders)
+    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+
+    // PostgreSQL JDBC driver (runtime only)
+    runtimeOnly 'org.postgresql:postgresql'
+
+    //Testing: JUnit, Mockito, Spring Test, MockMvc
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // Security testing (mock authentication, JWT, roles)
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    // JUnit Platform launcher
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
