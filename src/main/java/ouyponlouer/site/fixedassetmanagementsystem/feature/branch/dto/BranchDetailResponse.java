@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public record BranchDetailResponse(
+        String id,
         String initial,
         String branchCode,
         String companyName,
