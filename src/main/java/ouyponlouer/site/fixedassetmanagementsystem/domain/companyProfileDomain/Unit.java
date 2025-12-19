@@ -1,4 +1,5 @@
-package ouyponlouer.site.fixedassetmanagementsystem.domain;
+package ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain;
+
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -11,21 +12,17 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="positions")
-public class Position {
-
+@Table(name="units")
+public class Unit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false,unique = true,length = 20)
-    private String positionNameEn;
+    @Column(nullable = false,unique = true)
+    private String unitNameEn;
 
-    @Column(nullable = false,unique = true,length = 20)
-    private String positionNameKh;
+    @Column (nullable = false,unique = true)
+    private String unitNameKh;
 
     private LocalDate createAt;
-
-
-
 }

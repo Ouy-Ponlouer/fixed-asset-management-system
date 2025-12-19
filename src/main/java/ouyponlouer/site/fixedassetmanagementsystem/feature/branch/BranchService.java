@@ -1,8 +1,6 @@
 package ouyponlouer.site.fixedassetmanagementsystem.feature.branch;
 
-import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.UpdateBranchRequest;

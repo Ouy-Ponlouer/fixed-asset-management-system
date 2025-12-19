@@ -3,7 +3,7 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.position;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Position;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Position;
 
 import java.util.Optional;
 

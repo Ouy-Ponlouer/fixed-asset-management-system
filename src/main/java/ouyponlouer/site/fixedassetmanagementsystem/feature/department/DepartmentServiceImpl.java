@@ -1,6 +1,5 @@
 package ouyponlouer.site.fixedassetmanagementsystem.feature.department;
 
-import io.swagger.v3.oas.annotations.servers.Server;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -8,8 +7,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Department;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Department;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.CreateDepartmentRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.DepartmentDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.UpdateDepartmentRequest;

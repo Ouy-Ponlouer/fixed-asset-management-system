@@ -1,11 +1,9 @@
-package ouyponlouer.site.fixedassetmanagementsystem.domain;
+package ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Getter
 @Setter

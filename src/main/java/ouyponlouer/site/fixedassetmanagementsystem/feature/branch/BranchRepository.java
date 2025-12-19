@@ -3,9 +3,8 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.branch;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository

@@ -1,4 +1,4 @@
-package ouyponlouer.site.fixedassetmanagementsystem.domain;
+package ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain;
 
 import jakarta.persistence.*;
 import lombok.Getter;

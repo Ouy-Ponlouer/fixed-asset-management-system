@@ -4,7 +4,7 @@ import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Position;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Position;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.CreatePositionRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.PositionDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.UpdatePositionRequest;
