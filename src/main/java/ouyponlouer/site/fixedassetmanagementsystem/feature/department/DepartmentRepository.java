@@ -5,6 +5,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Department;
 
+import java.util.Optional;
+
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department,Integer> {
 
@@ -21,4 +23,5 @@ public interface DepartmentRepository extends JpaRepository<Department,Integer> 
     boolean existsByNameKh(String departmentNameKh);
 
 
+    Optional<Department> findByDepartmentNameEn(String departmentNameEn);
 }

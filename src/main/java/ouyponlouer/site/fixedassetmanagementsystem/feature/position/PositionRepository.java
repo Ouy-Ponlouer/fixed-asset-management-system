@@ -20,4 +20,7 @@ public interface PositionRepository extends JpaRepository<Position,Integer> {
     boolean existsByNameKh(String positionNameKh);
 
 
+    Optional<Position> findByPositionNameEn(String positionNameEn);
+
+
 }

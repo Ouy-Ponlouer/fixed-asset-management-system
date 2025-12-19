@@ -29,8 +29,10 @@ public interface UnitRepository extends JpaRepository<Unit,Integer> {
 
 
     // find Id
-
-
     @Override
     Optional<Unit> findById(Integer integer);
+
+
+    Optional<Unit> findByUnitNameEn(String unitNameEn);
+
 }
