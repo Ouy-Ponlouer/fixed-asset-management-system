@@ -3,7 +3,7 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Department;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Department;
 
 import java.util.Optional;
 
@@ -23,4 +23,5 @@ public interface DepartmentRepository extends JpaRepository<Department,Integer> 
     boolean existsByNameKh(String departmentNameKh);
 
 
+    Optional<Department> findByDepartmentNameEn(String departmentNameEn);
 }

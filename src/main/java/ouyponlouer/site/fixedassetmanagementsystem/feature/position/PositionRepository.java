@@ -3,7 +3,7 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.position;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Position;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Position;
 
 import java.util.Optional;
 
@@ -18,6 +18,9 @@ public interface PositionRepository extends JpaRepository<Position,Integer> {
 
     @Query(value = "SELECT EXISTS (SELECT * FROM positions WHERE position_name_kh=?1)",nativeQuery = true)
     boolean existsByNameKh(String positionNameKh);
+
+
+    Optional<Position> findByPositionNameEn(String positionNameEn);
 
 
 }

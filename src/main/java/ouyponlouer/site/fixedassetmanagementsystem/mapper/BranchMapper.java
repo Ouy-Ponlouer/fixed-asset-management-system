@@ -4,7 +4,7 @@ import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.UpdateBranchRequest;

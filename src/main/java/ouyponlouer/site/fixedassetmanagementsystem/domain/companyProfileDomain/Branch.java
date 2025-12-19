@@ -1,11 +1,10 @@
-package ouyponlouer.site.fixedassetmanagementsystem.domain;
+package ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,7 +20,7 @@ public class Branch {
     @Column(nullable = false, length = 20)
     private String initial;
 
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,length = 20)
     private String companyName;
 
     @Column(nullable = false, length = 20)
@@ -42,10 +41,13 @@ public class Branch {
     @Column( nullable = true,length = 15)
     private String phoneNumber;
 
-//    @Column(nullable = false)
     private LocalDate startDate;
     private String website;
     private String description;
     private Boolean isActive;
+
+    // One Branch has many employee
+    @OneToMany(mappedBy = "branches") // by directional association, it tells JPA that don't create new table I had created column on table Employee, and Employee depend on Position
+    private List<Employee> employees;
 
 }

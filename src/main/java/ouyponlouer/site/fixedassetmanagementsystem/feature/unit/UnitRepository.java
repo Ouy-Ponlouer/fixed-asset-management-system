@@ -3,7 +3,7 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.unit;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Unit;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Unit;
 
 import java.util.Optional;
 
@@ -29,8 +29,10 @@ public interface UnitRepository extends JpaRepository<Unit,Integer> {
 
 
     // find Id
-
-
     @Override
     Optional<Unit> findById(Integer integer);
+
+
+    Optional<Unit> findByUnitNameEn(String unitNameEn);
+
 }

@@ -5,10 +5,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.UpdateBranchRequest;
@@ -161,7 +160,7 @@ public class BranchServiceImpl implements BranchService {
     //--------------------------------------------------------//
 
     @Override
-    public BranchDetailResponse getBranchByid(int id) {
+    public BranchDetailResponse getBranchByid(Integer id) {
         Branch branch=branchRepository
                 .findById(id)
                 .orElseThrow(()->new ResponseStatusException

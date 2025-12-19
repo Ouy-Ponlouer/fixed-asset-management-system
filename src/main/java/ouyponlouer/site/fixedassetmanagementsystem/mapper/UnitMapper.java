@@ -4,7 +4,7 @@ import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Unit;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Unit;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.CreateUnitRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.UnitDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.UpdateUnitRequest;

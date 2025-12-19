@@ -3,9 +3,8 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.branch;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.Branch;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -32,6 +31,11 @@ public interface BranchRepository extends JpaRepository<Branch,Integer> {
     boolean existsByPhoneNumber(String phoneNumber);
 
 
-    Optional<Branch> findById(int id);
+    Optional<Branch> findById(Integer id);
     Optional<Branch> findByBranchCode(String branchCode);
+
+    //SELECT b FROM Branch b WHERE b.branchNameEn = ?1
+    Optional<Branch> findByBranchNameEn(String branchNameEn);
+
+
 }
