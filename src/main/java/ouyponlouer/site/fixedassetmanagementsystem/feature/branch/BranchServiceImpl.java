@@ -160,7 +160,7 @@ public class BranchServiceImpl implements BranchService {
     //--------------------------------------------------------//
 
     @Override
-    public BranchDetailResponse getBranchByid(int id) {
+    public BranchDetailResponse getBranchByid(Integer id) {
         Branch branch=branchRepository
                 .findById(id)
                 .orElseThrow(()->new ResponseStatusException

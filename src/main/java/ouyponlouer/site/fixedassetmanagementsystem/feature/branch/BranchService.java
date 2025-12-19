@@ -1,9 +1,12 @@
 package ouyponlouer.site.fixedassetmanagementsystem.feature.branch;
 
 import org.springframework.data.domain.Page;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.UpdateBranchRequest;
+
+import java.util.Optional;
 
 public interface BranchService {
 
@@ -23,11 +26,10 @@ public interface BranchService {
     void disableBranch(int id);
 
     // Get Branch by Id
-    BranchDetailResponse getBranchByid(int id);
+    BranchDetailResponse getBranchByid(Integer id);
 
     // Get Branch By Code
     BranchDetailResponse getBranchByCode(String code);
-
     // Delete By Id
     void deleteById(int id);
 }

@@ -40,7 +40,7 @@ public class BranchController {
     @ResponseStatus(HttpStatus.OK)
     @PutMapping("/{id}")
     BranchDetailResponse updateBranchById( @PathVariable int id, @Valid @RequestBody UpdateBranchRequest updateBranchRequest) {
-       return branchService.updateBranchById(id,updateBranchRequest);
+        return branchService.updateBranchById(id,updateBranchRequest);
     }
 
 

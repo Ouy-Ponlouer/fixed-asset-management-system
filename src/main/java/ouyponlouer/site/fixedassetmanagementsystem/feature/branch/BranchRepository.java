@@ -31,6 +31,11 @@ public interface BranchRepository extends JpaRepository<Branch,Integer> {
     boolean existsByPhoneNumber(String phoneNumber);
 
 
-    Optional<Branch> findById(int id);
+    Optional<Branch> findById(Integer id);
     Optional<Branch> findByBranchCode(String branchCode);
+
+    //SELECT b FROM Branch b WHERE b.branchNameEn = ?1
+    Optional<Branch> findByBranchNameEn(String branchNameEn);
+
+
 }
