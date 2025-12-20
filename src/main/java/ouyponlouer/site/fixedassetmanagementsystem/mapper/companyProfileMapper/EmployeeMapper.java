@@ -1,4 +1,4 @@
-package ouyponlouer.site.fixedassetmanagementsystem.mapper;
+package ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper;
 import org.mapstruct.*;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Employee;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employee.dto.CreateEmployeeRequest;

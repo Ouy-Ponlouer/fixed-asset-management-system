@@ -1,4 +1,7 @@
 package ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetUnit.dto;
 
-public class UpdateAssetUnitRequest {
+public record UpdateAssetUnitRequest(
+        String assetUnitNameEn,
+        String assetUnitNameKh
+) {
 }

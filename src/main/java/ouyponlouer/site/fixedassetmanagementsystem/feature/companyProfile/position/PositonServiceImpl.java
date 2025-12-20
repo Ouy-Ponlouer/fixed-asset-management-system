@@ -11,7 +11,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.P
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.CreatePositionRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.PositionDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.UpdatePositionRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.PositionMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper.PositionMapper;
 
 import java.time.LocalDate;
 

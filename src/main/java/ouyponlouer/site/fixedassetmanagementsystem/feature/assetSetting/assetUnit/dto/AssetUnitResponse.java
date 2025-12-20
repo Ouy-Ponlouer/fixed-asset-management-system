@@ -1,4 +1,8 @@
 package ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetUnit.dto;
 
-public class AssetUnitResponse {
+public record AssetUnitResponse(
+        Integer id,
+        String assetUnitNameEn,
+        String assetUnitNameKh
+) {
 }

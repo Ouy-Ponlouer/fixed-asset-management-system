@@ -1,4 +1,4 @@
-package ouyponlouer.site.fixedassetmanagementsystem.mapper;
+package ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper;
 
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;

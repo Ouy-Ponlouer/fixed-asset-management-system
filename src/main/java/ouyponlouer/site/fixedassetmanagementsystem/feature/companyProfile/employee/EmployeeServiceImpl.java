@@ -15,7 +15,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employ
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employee.dto.UpdateEmployeeRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.PositionRepository;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.UnitRepository;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.EmployeeMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper.EmployeeMapper;
 
 import java.time.LocalDate;
 import java.util.UUID;

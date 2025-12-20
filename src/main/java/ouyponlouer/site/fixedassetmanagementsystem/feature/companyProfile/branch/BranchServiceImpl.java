@@ -11,7 +11,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.B
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.BranchDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.BranchRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.UpdateBranchRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.BranchMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper.BranchMapper;
 @Service
 @RequiredArgsConstructor
 public class BranchServiceImpl implements BranchService {

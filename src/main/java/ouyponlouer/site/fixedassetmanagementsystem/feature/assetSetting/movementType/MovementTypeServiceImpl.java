@@ -11,7 +11,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.Mov
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.CreateMovementTypeRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.MovementTypeResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.UpdateMovementTypeRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.MovementTypeMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper.MovementTypeMapper;
 
 import java.time.LocalDate;
 
