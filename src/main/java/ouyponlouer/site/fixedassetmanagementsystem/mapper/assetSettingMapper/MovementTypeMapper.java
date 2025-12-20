@@ -1,11 +1,10 @@
-package ouyponlouer.site.fixedassetmanagementsystem.mapper;
+package ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper;
 
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.MovementType;
-import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Position;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.CreateMovementTypeRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.MovementTypeResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.movementType.dto.UpdateMovementTypeRequest;

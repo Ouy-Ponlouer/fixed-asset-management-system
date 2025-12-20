@@ -1,4 +1,4 @@
-package ouyponlouer.site.fixedassetmanagementsystem.mapper;
+package ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper;
 
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;

@@ -11,7 +11,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.Con
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCondition.dto.ConditionResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCondition.dto.CreateConditionRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCondition.dto.UpdateConditionRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.ConditionMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper.ConditionMapper;
 
 import java.time.LocalDate;
 

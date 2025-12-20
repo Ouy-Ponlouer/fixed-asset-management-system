@@ -11,7 +11,7 @@ import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.U
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.CreateUnitRequest;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.UnitDetailResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.UpdateUnitRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.mapper.UnitMapper;
+import ouyponlouer.site.fixedassetmanagementsystem.mapper.companyProfileMapper.UnitMapper;
 
 import java.time.LocalDate;
 
