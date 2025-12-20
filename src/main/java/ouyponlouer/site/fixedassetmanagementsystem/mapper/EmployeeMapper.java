@@ -1,9 +1,9 @@
 package ouyponlouer.site.fixedassetmanagementsystem.mapper;
 import org.mapstruct.*;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Employee;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.employee.dto.CreateEmployeeRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.employee.dto.EmployeeDetailResponse;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.employee.dto.UpdateEmployeeRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employee.dto.CreateEmployeeRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employee.dto.EmployeeDetailResponse;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.employee.dto.UpdateEmployeeRequest;
 
 @Mapper(componentModel = "spring")
 public interface EmployeeMapper {
