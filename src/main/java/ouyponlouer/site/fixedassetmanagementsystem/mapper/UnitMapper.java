@@ -5,9 +5,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Unit;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.CreateUnitRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.UnitDetailResponse;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.unit.dto.UpdateUnitRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.CreateUnitRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.UnitDetailResponse;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.unit.dto.UpdateUnitRequest;
 
 @Mapper(componentModel = "spring")
 public interface UnitMapper {

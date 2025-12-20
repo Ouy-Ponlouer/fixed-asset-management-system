@@ -5,9 +5,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Department;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.CreateDepartmentRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.DepartmentDetailResponse;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.department.dto.UpdateDepartmentRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.department.dto.CreateDepartmentRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.department.dto.DepartmentDetailResponse;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.department.dto.UpdateDepartmentRequest;
 
 @Mapper(componentModel = "spring")
 public interface DepartmentMapper {

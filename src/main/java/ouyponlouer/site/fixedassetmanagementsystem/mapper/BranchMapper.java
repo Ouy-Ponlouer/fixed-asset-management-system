@@ -5,9 +5,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Branch;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchDetailResponse;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.BranchRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.branch.dto.UpdateBranchRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.BranchDetailResponse;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.BranchRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.branch.dto.UpdateBranchRequest;
 
 @Mapper(componentModel = "spring")
 public interface BranchMapper {

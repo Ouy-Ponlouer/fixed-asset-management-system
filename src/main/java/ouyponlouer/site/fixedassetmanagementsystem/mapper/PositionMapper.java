@@ -5,9 +5,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.companyProfileDomain.Position;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.CreatePositionRequest;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.PositionDetailResponse;
-import ouyponlouer.site.fixedassetmanagementsystem.feature.position.dto.UpdatePositionRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.CreatePositionRequest;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.PositionDetailResponse;
+import ouyponlouer.site.fixedassetmanagementsystem.feature.companyProfile.position.dto.UpdatePositionRequest;
 
 @Mapper(componentModel = "spring")
 public interface PositionMapper {
