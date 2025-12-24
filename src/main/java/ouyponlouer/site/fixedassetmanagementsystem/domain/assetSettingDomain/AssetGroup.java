@@ -10,6 +10,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Setter
 @Getter
@@ -41,5 +42,10 @@ public class AssetGroup {
 
     @Column(nullable = false)
     private LocalDate createAt;
+
+
+    // One asset group has many asset categories
+    @OneToMany(mappedBy = "assetGroups") // mappedBy to the field name in AssetCategory
+    private List<AssetCategory> assetCategory;
 
 }
