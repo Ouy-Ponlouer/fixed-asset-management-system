@@ -7,19 +7,26 @@ import java.time.LocalDate;
 
 public record AssetCategoryResponse(
         Integer id,
+//        String initial,
+//
+//        String assetCategoryNameEn,
+//        String assetCategoryNameKh,
+//
+//        Integer assetGroupId,
+//        String assetGroupName,
+
+        DepreciationMethod depreciationMethod,
+        DepreciationCycle depreciationCycle,
+
+        Integer usefulLife,
+        LocalDate createdAt,
         String initial,
 
         String assetCategoryNameEn,
         String assetCategoryNameKh,
 
         Integer assetGroupId,
-        String assetGroupName,
-
-        DepreciationMethod depreciationMethod,
-        DepreciationCycle depreciationCycle,
-
-        Integer usefulLife,
-        LocalDate createdAt
+        String assetGroupName
 
 ) {
 }

@@ -22,14 +22,14 @@ public class AssetCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false,length = 20, unique = true)
-    private String initial;
-
-    @Column(nullable = false,length = 50)
-    private String assetCategoryNameEn;
-
-    @Column(nullable = false,length = 50)
-    private String assetCategoryNameKh;
+//    @Column(nullable = false,length = 20, unique = true)
+//    private String initial;
+//
+//    @Column(nullable = false,length = 50)
+//    private String assetCategoryNameEn;
+//
+//    @Column(nullable = false,length = 50)
+//    private String assetCategoryNameKh;
 
 //    @Enumerated(EnumType.STRING)
     private DepreciationMethod depreciationMethod;
@@ -45,5 +45,18 @@ public class AssetCategory {
     @ManyToOne(fetch = FetchType.LAZY,optional = false) // fetch only necessary data
     @JoinColumn(name = "asset_group_id",nullable = false)
     private AssetGroup assetGroups;
+
+
+
+    @Column(nullable = false,length = 20, unique = true)
+    private String initial;
+
+    @Column(nullable = false,length = 50)
+    private String assetCategoryNameEn;
+
+    @Column(nullable = false,length = 50)
+    private String assetCategoryNameKh;
+
+
 
 }

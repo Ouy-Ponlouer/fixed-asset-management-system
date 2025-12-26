@@ -14,9 +14,21 @@ public class AssetCategoryController {
 
     private final AssetCategoryService assetCategoryService;
 
+//    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+//    AssetCategoryResponse createAssetCategory(@Valid @RequestBody CreateAssetCategoryRequest createAssetCategoryRequest) {
+//        return assetCategoryService.createAssetCategory(createAssetCategoryRequest);
+//    }
+
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     AssetCategoryResponse createAssetCategory(@Valid @RequestBody CreateAssetCategoryRequest createAssetCategoryRequest) {
         return assetCategoryService.createAssetCategory(createAssetCategoryRequest);
     }
+
+
+
+
+
 }
