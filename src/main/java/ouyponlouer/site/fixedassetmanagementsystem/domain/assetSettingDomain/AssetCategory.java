@@ -46,4 +46,9 @@ public class AssetCategory {
     @JoinColumn(name = "asset_group_id",nullable = false)
     private AssetGroup assetGroups;
 
+
+
+
+
+
 }
