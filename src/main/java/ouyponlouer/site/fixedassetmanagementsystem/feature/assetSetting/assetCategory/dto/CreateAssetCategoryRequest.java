@@ -27,6 +27,18 @@ public record CreateAssetCategoryRequest(
         @Size( max = 50, message = "Asset category name in Khmer must not exceed 50 characters")
         String assetCategoryNameKh,
 
+//        @Enumerated(EnumType.STRING)
+//        DepreciationMethod depreciationMethod,
+//
+//        @Enumerated( EnumType.STRING)
+//        DepreciationCycle depreciationCycle,
+//
+//        @NotNull( message = "Useful life is required")
+//        @Positive( message = "Useful life must be positive")
+//        Integer usefulLife
+
+
+        //------------------------
         @Enumerated(EnumType.STRING)
         DepreciationMethod depreciationMethod,
 
