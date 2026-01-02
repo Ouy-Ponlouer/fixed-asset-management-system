@@ -1,9 +1,6 @@
 package ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper;
 
-import org.mapstruct.BeanMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.NullValuePropertyMappingStrategy;
+import org.mapstruct.*;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.AssetGroup;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetGroup.dto.AssetGroupResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetGroup.dto.CreateAssetGroupRequest;
@@ -17,7 +14,6 @@ public interface AssetGroupMapper {
 
     // Response
     AssetGroupResponse toAssetGroupResponse(AssetGroup assetGroup);
-
     // update
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     AssetGroup fromUpdateAssetGroupRequest(UpdateAssetGroupRequest updateAssetGroupRequest, @MappingTarget AssetGroup assetGroup);
