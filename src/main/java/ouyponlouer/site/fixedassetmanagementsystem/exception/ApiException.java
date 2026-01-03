@@ -11,10 +11,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @RestControllerAdvice   // necessary
 public class ApiException {
@@ -65,19 +64,21 @@ public class ApiException {
 
 
     //----=============================================-----//
+//
+//    @ExceptionHandler(HttpMessageNotReadableException.class)
+//    public ResponseEntity<Map<String, String>> handleInvalidFormat(
+//            HttpMessageNotReadableException ex) {
+//
+//        Map<String, String> errors = new HashMap<>();
+//
+//        if (ex.getCause() instanceof InvalidFormatException ife) {
+//            String fieldName = ife.getPath().get(0).getFieldName();
+//            errors.put(fieldName, "Must be a valid number");
+//        }
+//
+//        return ResponseEntity.badRequest().body(errors);
+//    }
 
-    @ExceptionHandler(HttpMessageNotReadableException.class)
-    public ResponseEntity<Map<String, String>> handleInvalidFormat(
-            HttpMessageNotReadableException ex) {
-
-        Map<String, String> errors = new HashMap<>();
-
-        if (ex.getCause() instanceof InvalidFormatException ife) {
-            String fieldName = ife.getPath().get(0).getFieldName();
-            errors.put(fieldName, "Must be a valid number");
-        }
-
-        return ResponseEntity.badRequest().body(errors);
-    }
-
+    //--------------- New Version for Validate Not readable ------------------//
+//
 }
