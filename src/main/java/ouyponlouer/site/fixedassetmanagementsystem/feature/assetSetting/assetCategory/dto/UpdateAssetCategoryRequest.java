@@ -15,9 +15,9 @@ public record UpdateAssetCategoryRequest(
         @Size( max = 10, message = "Initial must not exceed 10 characters")
         String initial,
 
-        @NotBlank( message = "Asset group is required")
-        @Size( max = 50, message = "Asset group must not exceed 50 characters")
-        AssetGroup assetGroup,
+        //----  Foreign Key ----
+        @NotNull( message = "Asset group is required")
+        Integer assetGroupId,
 
         @NotBlank( message = "Asset category name in English is required")
         @Size( max = 50, message = "Asset category name in English must not exceed 50 characters")

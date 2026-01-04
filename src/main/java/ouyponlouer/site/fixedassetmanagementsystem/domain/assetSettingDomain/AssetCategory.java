@@ -22,6 +22,8 @@ public class AssetCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    private String code;
+
     @Column(nullable = false,length = 20, unique = true)
     private String initial;
 
@@ -32,19 +34,21 @@ public class AssetCategory {
     private String assetCategoryNameKh;
 
     @Enumerated(EnumType.STRING)
+    @Column( length = 50)
     private DepreciationMethod depreciationMethod;
 
-//    @Enumerated( EnumType.STRING)
+    @Column(length = 50)
+    @Enumerated( EnumType.STRING)
     private DepreciationCycle depreciationCycle;
 
     private Integer usefulLife;
-    private LocalDate createAt;
+    private LocalDate createdAt;
 
 
-    // one asset category, many asset category
-    @ManyToOne(fetch = FetchType.LAZY,optional = false) // fetch only necessary data
+    @ManyToOne
     @JoinColumn(name = "asset_group_id",nullable = false)
-    private AssetGroup assetGroups;
+    private AssetGroup assetGroup;
+
 
 
 

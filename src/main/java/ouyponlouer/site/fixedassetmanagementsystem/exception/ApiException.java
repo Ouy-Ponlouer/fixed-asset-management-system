@@ -64,21 +64,20 @@ public class ApiException {
 
 
     //----=============================================-----//
-//
-//    @ExceptionHandler(HttpMessageNotReadableException.class)
-//    public ResponseEntity<Map<String, String>> handleInvalidFormat(
-//            HttpMessageNotReadableException ex) {
-//
-//        Map<String, String> errors = new HashMap<>();
-//
-//        if (ex.getCause() instanceof InvalidFormatException ife) {
-//            String fieldName = ife.getPath().get(0).getFieldName();
-//            errors.put(fieldName, "Must be a valid number");
-//        }
-//
-//        return ResponseEntity.badRequest().body(errors);
-//    }
 
-    //--------------- New Version for Validate Not readable ------------------//
-//
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<Map<String, String>> handleInvalidFormat(
+            HttpMessageNotReadableException ex) {
+
+        Map<String, String> errors = new HashMap<>();
+
+        if (ex.getCause() instanceof InvalidFormatException ife) {
+            String fieldName = ife.getPath().get(0).getFieldName();
+            errors.put(fieldName, "is invalid, Please input again");
+        }
+
+        return ResponseEntity.badRequest().body(errors);
+    }
+
+
 }

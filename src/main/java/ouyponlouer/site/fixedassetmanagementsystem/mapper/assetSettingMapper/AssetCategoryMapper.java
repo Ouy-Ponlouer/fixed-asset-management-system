@@ -1,9 +1,6 @@
 package ouyponlouer.site.fixedassetmanagementsystem.mapper.assetSettingMapper;
 
-import org.mapstruct.BeanMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.NullValuePropertyMappingStrategy;
+import org.mapstruct.*;
 import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.AssetCategory;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCategory.dto.AssetCategoryResponse;
 import ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCategory.dto.CreateAssetCategoryRequest;
@@ -17,6 +14,8 @@ public interface AssetCategoryMapper {
     AssetCategory fromCreateAssetCategoryRequest(CreateAssetCategoryRequest createAssetCategoryRequest);
 
     //Response
+    @Mapping( target = "assetGroupId",source = "assetGroup.id")
+    @Mapping(target = "assetGroupName",source = "assetGroup.assetGroupNameEn")
      AssetCategoryResponse toAssetCategoryResponse(AssetCategory assetCategory);
 
      // update

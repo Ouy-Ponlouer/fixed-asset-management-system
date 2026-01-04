@@ -2,11 +2,14 @@ package ouyponlouer.site.fixedassetmanagementsystem.feature.assetSetting.assetCa
 
 import ouyponlouer.site.fixedassetmanagementsystem.base.DepreciationCycle;
 import ouyponlouer.site.fixedassetmanagementsystem.base.DepreciationMethod;
+import ouyponlouer.site.fixedassetmanagementsystem.domain.assetSettingDomain.AssetGroup;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public record AssetCategoryResponse(
         Integer id,
+        String code,
         String initial,
 
         String assetCategoryNameEn,
@@ -20,13 +23,6 @@ public record AssetCategoryResponse(
 
         Integer usefulLife,
         LocalDate createdAt
-//        String initial,
-//
-//        String assetCategoryNameEn,
-//        String assetCategoryNameKh,
-//
-//        Integer assetGroupId,
-//        String assetGroupName
 
 ) {
 }
