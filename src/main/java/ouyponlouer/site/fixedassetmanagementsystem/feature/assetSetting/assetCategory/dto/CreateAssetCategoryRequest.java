@@ -17,7 +17,7 @@ public record CreateAssetCategoryRequest(
 
         //----  Foreign Key ----
         @NotNull( message = "Asset group is required")
-        Integer groupId,
+        Integer assetGroupId,
 
         @NotBlank( message = "Asset category name in English is required")
         @Size( max = 50, message = "Asset category name in English must not exceed 50 characters")
